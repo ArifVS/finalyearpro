@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Federated Traffic Intelligence System" },
+      { name: "description", content: "AI-powered smart traffic management system using YOLOv8, Federated Learning, and Edge AI for real-time vehicle detection, congestion prediction, and adaptive si" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Federated Traffic Intelligence System" },
+      { property: "og:description", content: "AI-powered smart traffic management system using YOLOv8, Federated Learning, and Edge AI for real-time vehicle detection, congestion prediction, and adaptive si" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Federated Traffic Intelligence System" },
+      { name: "twitter:description", content: "AI-powered smart traffic management system using YOLOv8, Federated Learning, and Edge AI for real-time vehicle detection, congestion prediction, and adaptive si" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf3e5d4c-960e-4bfb-8acb-20757c96eee8/id-preview-d22e6461--3d38329b-d9d8-41cf-b423-17f3c39ee6c6.lovable.app-1778254088955.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cf3e5d4c-960e-4bfb-8acb-20757c96eee8/id-preview-d22e6461--3d38329b-d9d8-41cf-b423-17f3c39ee6c6.lovable.app-1778254088955.png" },
     ],
     links: [
       {
