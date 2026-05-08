@@ -1,26 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CyberBackground } from "@/components/traffic/Background";
+import { Nav } from "@/components/traffic/Nav";
+import { Hero } from "@/components/traffic/Hero";
+import { Dashboard } from "@/components/traffic/Dashboard";
+import { Analytics } from "@/components/traffic/Analytics";
+import { Federated } from "@/components/traffic/Federated";
+import { Features } from "@/components/traffic/Features";
+import { UploadSection } from "@/components/traffic/Upload";
+import { Detection } from "@/components/traffic/Detection";
+import { About } from "@/components/traffic/About";
+import { Team } from "@/components/traffic/Team";
+import { Footer } from "@/components/traffic/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "NeuroTraffic — Edge Federated Learning for Smart Cities" },
+      { name: "description", content: "AI-powered real-time traffic prediction using edge-based federated learning. Privacy-preserving, low-latency, built for smart cities." },
+      { property: "og:title", content: "NeuroTraffic — Smart City Traffic AI" },
+      { property: "og:description", content: "Edge-based federated learning for real-time traffic prediction." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="dark relative min-h-screen overflow-hidden text-foreground">
+      <CyberBackground />
+      <Nav />
+      <main className="relative z-10">
+        <Hero />
+        <Dashboard />
+        <Analytics />
+        <Federated />
+        <Features />
+        <UploadSection />
+        <Detection />
+        <About />
+        <Team />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
